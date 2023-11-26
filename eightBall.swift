@@ -2,7 +2,7 @@ let playerNmae = "King"
 
 let playerQuestion = "Will there be any more snowfall in New York for winter 2020? ❄️"
 
-let randomNumber = Int.random(in: 1...9)
+let randomNumber = Int.random(in: 1...12)
 // print(randomNumber)
 
 let eightBall: String
@@ -26,6 +26,14 @@ switch randomNumber {
     eightBall = "Outlook not so good"
   case 9:
     eightBall = "Very doubtful"
+    case 10:
+    eightBall = "No, i don't think so"
+    case 11:
+    eightBall = "Signs point to yes"
+    case 12:
+    eightBall = "Who knows?"
+    case 13:
+    eightBall = "Omg, No!"
   default:
     eightBall = "Error"
 }
@@ -33,3 +41,4 @@ switch randomNumber {
 print("\(playerNmae) asks: \(playerQuestion)")
 
 print("Magic 8 Ball's answer: \(eightBall)")
+
